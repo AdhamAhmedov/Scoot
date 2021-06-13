@@ -1,0 +1,158 @@
+.intro-section__wrapper{
+    position: relative;
+    background-image: url(../images/background-intro.jpg);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    margin-bottom: 70px;
+    padding: 20px;
+    padding-top: 150px;
+}
+
+.intro-section__heading{
+    margin-left: 165px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: left;
+    max-width: 500px;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+}
+
+
+
+
+
+.intro-section__paragraph{
+   position: relative;
+   margin-left: 18%;
+    margin-bottom: 45px;
+    max-width: 405px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+
+}
+
+.intro-section__paragraph::after{
+    content: url(../images/Group@2x.svg);
+    max-width: 447px;
+    position: absolute;
+    left: 110%;
+    top: 51%;
+
+}
+
+.intro-section__paragraph::before{
+    content: url(../images/Path-1.svg);
+    position: absolute;
+    max-width: 202px;
+    left: -64%;
+    top: 51%;
+}
+
+
+.intro-section__link{
+    @include links;
+    // display: inline-block;
+    margin-bottom: 152px;
+    margin-left: 18%;
+}
+
+.intro-section__link:hover{
+    background-color: transparent;
+    color: $yellow;
+    cursor: pointer;
+
+}
+
+
+
+
+@media only screen and (max-width: 1160px) {
+    .intro-section__paragraph::after{
+        left: 50%;
+        top: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 920px){
+
+    .intro-section__wrapper{
+        background-position: 40%;
+    }
+
+    .intro-section__paragraph::before{
+        display: none;
+    }
+
+    .intro-section__paragraph::after{
+        left: -100%;
+        top: 170%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .intro-section__wrapper{
+        background-position: 80%;
+    }
+
+    .intro-section__heading{
+        display: block;
+        text-align: center;
+        max-width: 500px;
+        margin: 0px auto;
+        margin-bottom: 40px;
+    }
+
+    .intro-section__paragrap{
+        display: block;
+        margin-left: 0%;
+        // width: 100%;
+        max-width: 573px;
+        text-align: center;
+    }
+
+    .intro-section__link{
+        display: block;
+    }
+
+    .intro-section__paragraph::after{
+        
+        left: -120%;
+        top: 180%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 500px){
+
+    .intro-section__wrapper{
+        background-position: 80%;
+    }
+
+    .intro-section__heading{
+        font-size: 40px;
+        line-height: 40px;
+
+    }
+
+    .intro-section__paragraph{
+
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .intro-section__paragraph::after{
+        left: -110%;
+        top: 170%;
+    }
+}

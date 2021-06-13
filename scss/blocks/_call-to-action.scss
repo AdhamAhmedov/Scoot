@@ -1,0 +1,35 @@
+
+.call-to-action{
+    background-color: $dark-navy;
+    background-image: url(../images/call-to-action.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 0px;
+    background-position: 100% 100%;
+    // height: 300px;
+}
+
+.call-to-action__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 300px;
+}
+
+.call-to-action__heading{
+    max-width: 415px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+
+}
+.apple-link img{
+    margin-right: 18px;
+    border-radius: 4px;
+}
+
+.google-link img{
+    border-radius: 4px;
+}

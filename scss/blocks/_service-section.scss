@@ -1,0 +1,191 @@
+
+.section-guide{
+ 
+    position: relative;
+    padding-top: 6%;
+}
+
+
+.guide__list{
+    display: flex;
+    list-style: none;
+    margin-left: 150px;
+    padding: 0;
+    
+
+}
+
+.guide__item{
+    position: relative;
+    z-index: 2;
+    margin: 15px;
+   
+    max-width: 350px;
+}
+
+.item-1::before{
+    position: absolute;
+    top: -123px;
+content: url(../images/tell.svg);
+width: 96px;
+height: 96px;
+}
+
+
+.item-2::before{
+    position: absolute;
+    top: -123px;
+content: url(../images/skuter.svg);
+width: 96px;
+height: 96px;
+
+}
+
+.item-3::before{
+    position: absolute;
+    top: -123px;
+content: url(../images/driver.svg);
+width: 96px;
+height: 96px;
+}
+
+.list-item__heading{
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    
+}
+
+.list-item__paragraph{
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;  
+    color: #939CAA;
+    
+}
+
+.guide__line{
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 35px;
+    display: inline-block;
+    width: 100%;
+    max-width: 70%;
+    height: 30px;
+    background-color: $light-gray;
+    
+}
+
+
+
+@media only screen and (max-width: 1330px){
+    .guide__line{
+        max-width: 75%;
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .section-guide{
+        padding-left: 140px;
+    }
+
+
+    .guide__list{
+        flex-direction: column;
+    
+    }
+
+    .item-1::before{
+        top: 27px;
+        left: -170px;
+    }
+
+
+    .item-2::before{
+       top: 27px;  
+       left: -170px;
+    }
+
+
+    .item-3::before{
+       top: 27px;  
+       left: -170px;     
+    }
+
+    .guide__line{
+        width: 30px;
+        height: 85%;
+        top: -80px;
+        left: 165px;
+    }
+
+}
+
+@media only screen and (max-width: 485px){
+
+    .guide__line{
+        height: 78%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .section-guide{
+        padding-left: 0px;
+    }
+
+    .guide__list{
+        margin: 0;
+        text-align: center;
+    }
+
+    .guide__line{
+        display: none;
+    }
+
+    .guide__item{
+        margin: 15px;
+        max-width: 311px;
+        margin-bottom: 100px;
+
+    }
+
+    .list-item__heading{
+        font-size: 20px;
+        line-height: 28px;
+        
+        
+    }
+    
+    .list-item__paragraph{
+        font-size: 15px;
+        line-height: 25px;  
+        color: #939CAA;
+        
+    }
+
+    .item-1::before{
+        top: -100px;
+        left: 100px;
+    }
+
+
+    .item-2::before{
+       top: -100px;  
+       left: 100px;
+    }
+
+
+    .item-3::before{
+       top: -100px;  
+       left: 100px;     
+    }
+    
+    
+}

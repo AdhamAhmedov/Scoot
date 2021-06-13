@@ -1,0 +1,114 @@
+.advantages-section{
+
+
+}
+
+.advantages-list{
+    padding: 0px;
+}
+
+.list__item:nth-child(2n) .img-wrapper-2{
+    order: -1;
+}
+
+.list__item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+}
+
+.item__info{
+max-width: 445px;
+
+}
+
+.item__heading{
+
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: $dark-navy
+    
+}
+
+.item__paragraph{
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: $dim-gray
+    
+
+}
+
+.item__link{
+    @include links
+}
+
+.item__link:hover{
+    background-color: transparent;
+    color: $yellow;
+}
+
+.item__img{
+   
+     border-radius: 50%;
+     max-width: 445px;
+
+}
+.img-wrapper-1{
+    position: relative;
+}
+
+.img-wrapper-2{
+    position: relative;   
+}
+
+.img-wrapper-3{
+    position: relative; 
+}
+
+
+// ======================================================================================
+
+.img-wrapper-1::after{
+    content: url(../../images/strelka-2.svg);
+    position: absolute;
+    top: 67%;
+    left: -30%;
+}
+
+
+.img-wrapper-2::after{
+    content: url(../images/strelka-3.svg);
+    position: absolute;
+    top: 0%;
+    left: -40%;
+}
+
+.img-wrapper-3::after{
+    content: url(../images/strelka-4.svg);
+    position: absolute;
+    top: 16%;
+    left: 56%;
+
+}
+
+
+
+
+@media only screen and (max-width: 930px){
+//     .advantages-list:nth-child(2n+1){
+// order: 1;
+//     }
+
+
+    .list__item{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}

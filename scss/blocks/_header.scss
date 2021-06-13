@@ -1,0 +1,167 @@
+.site-header{
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    top: 0px;
+    background-color: white;
+
+}
+
+.header__block{
+    display: flex;
+    height: 96px;
+    align-items: center;
+
+}
+
+.logo-link{
+    margin-right: 58px;
+
+}
+
+.button-hamburger{
+    display: none;
+}
+
+.nav-wrapper{
+    width: 100%;
+}
+
+.site-nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-nav{
+display: flex;
+list-style: none;
+padding: 0px;
+}
+
+.nav-item{
+
+}
+
+.nav-link{
+    margin-right: 32px;
+    text-decoration: none;
+    font-weight: bold;
+font-size: 15px;
+line-height: 25px;
+color: $dim-gray;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+    color: $yellow;
+}
+
+.nav-link:active{
+    color: $yellow;
+}
+
+.buttons{
+    @include links;
+    
+
+}
+
+.buttons:hover{
+    background-color: white;
+    color: $yellow;
+    cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .header__block{
+        height: 64px;
+    }
+
+    .logo-link{
+        display: block;
+        margin-left: 25%;
+        width: 75px;
+        height: 20px;
+
+    }
+
+    .button-hamburger{
+        z-index: 11;
+        display: block;
+        margin-left: 32px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .exit-icon{
+      display: none;
+    }
+
+
+    .header-adaptiv .nav-wrapper{
+
+        display: block;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 9;
+        // background-color: rgb(158, 157, 158);
+            }
+
+
+    .header-adaptiv .exit-icon{
+        display: block;
+         z-index: 11;
+
+        }
+        
+
+    .header-adaptiv .hamburger-icon{
+         display: none;
+
+        }
+            
+
+    .site-nav{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 64px;
+        width: 70%;
+        height: 90%;
+        padding: 32px;
+        background-color:  #333A44;
+        z-index: 10;
+    }
+
+    .header-adaptiv .site-nav{
+        display: block;
+    }
+
+    .list-nav{
+        display: flex;
+        flex-direction: column;
+        // z-index: 11;
+
+    }
+
+    .nav-item{
+        margin-bottom: 24px;
+    }
+
+
+
+    
+
+
+}
