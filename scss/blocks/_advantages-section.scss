@@ -1,6 +1,39 @@
 .advantages-section{
+position: relative;
 
+}
 
+.right-round{
+    position: absolute;
+display: inline-block;
+    width: 450px;
+    height: 450px;
+    background-color: #E5ECF4;
+    border-radius: 50%;
+    left: 105%;
+
+}
+
+.left-round{
+    position: absolute;
+    display: inline-block;
+        width: 450px;
+        height: 450px;
+        background-color: #E5ECF4;
+        border-radius: 50%;
+        left: -45%;
+        top: 35%;
+}
+
+.right-round-2{
+    position: absolute;
+    display: inline-block;
+        width: 450px;
+        height: 450px;
+        background-color: #E5ECF4;
+        border-radius: 50%;
+        left: 105%;
+        top: 73%;
 }
 
 .advantages-list{
